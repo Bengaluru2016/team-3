@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'health/$', views.health, name='health'),
     url(r'survey/$', views.survey, name='survey'),
     url(r'attend/$', views.attendance, name='attendance'),
+    url(r'login/$', views.login, name='login'),
 ]

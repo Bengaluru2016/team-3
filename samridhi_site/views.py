@@ -15,6 +15,9 @@ def send_message(sid, token, sms_from, sms_to, sms_body):
 def index_page(request):
     return render(request, 'samridhi_site/homepage.html', {})
 
+def login(request):
+    return render(request, 'samridhi_site/index.html', {})
+
 def notify_person(request):
     sid = 'none585'
     token = '0e7d6190249459c6d9ab400447a03ab4241537a8'
