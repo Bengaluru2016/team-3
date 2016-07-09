@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import Baseline, Enrollment, Academics, Health
 
-# Register your models here.
+admin.site.register(Baseline)
+admin.site.register(Enrollment)
+admin.site.register(Academics)
+admin.site.register(Health)

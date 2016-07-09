@@ -1,6 +1,6 @@
 from django import forms
 from .models import Baseline
-from .models import Enrollments
+from .models import Enrollment
 
 class BaselineForm(forms.ModelForm):
      class Meta:
@@ -9,6 +9,6 @@ class BaselineForm(forms.ModelForm):
 
 
 class EnrollmentForm(forms.ModelForm):
-       class Meta:
-       model=Enrollments
+    class Meta:
+       model=Enrollment
        fields=('id','name','fname','native_lang','survey_taken','siblings','photo','age','date')
