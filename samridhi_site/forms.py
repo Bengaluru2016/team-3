@@ -16,13 +16,13 @@ class EnrollmentForm(forms.ModelForm):
        model=Enrollment
        fields=('id','name','fname','native_lang','survey_taken','siblings','photo','age','date')
 
-class AcademicsForms(forms.ModelForms):
+class AcademicsForms(forms.ModelForm):
        class Meta:
             model=Academics
-            fields=('id','name','date','math','science','english','hindi','extracuricular_activities')
+            fields=('id','name','date','maths','science','english','hindi','extracuricular_activities')
 
 
-class HealthForms(forms.ModelForms):
+class HealthForms(forms.ModelForm):
        class Meta:
            model=Health
            fields=('id','name','date','student_health','fathers_health','mothers_health','siblings_health')
