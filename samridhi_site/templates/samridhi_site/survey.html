@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+	<title>Samridhidhi Login</title>
+
+	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="../../static/js/materialize.min.js"></script>
+          
+</head>
+<body class="blue-grey lighten-4">
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="nav-wrapper cyan">
+      <a href="#" class="brand-logo center">SAMRIDHIDHI</a>
+    </div>
+  </nav>
+<br>
+<br>
+<!-- Login Card -->
+<div class="container">
+		<div class="row">
+			<div>
+				<form class="col s10 offset-s1 m8 offset-m2 l8 offset-l2" id="login_form" action="#">
+			      <div class="card darken-1">
+			        <div class="card-content black-text">
+			          <span class="card-title">Survey Form</span>
+			          
+						
+
+
+
+<table class="tg">
+  <tr>
+    <th class="tg-031e" colspan="2">
+    	
+<div class="row">
+    						<div class="input-field col s7 offset-s1">
+          						<input id="first_name" data-error="Please enter a name" type="text" class="validate">
+         						<label for="first_name" class="active">Name</label>
+       						</div>
+       					</div>
+
+
+    </th>
+    <th class="tg-yw4l" rowspan="2">
+    	
+
+
+
+    	 <img src="pic.jpg" alt="Smiley face" width="100" height="100"> <br>upload photo
+    </th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" colspan="2">
+    	
+
+<div class="row">
+					        <div class="input-field col s7 offset-s1">
+					          <input id="father_name" data-error="Please enter a name" type="text" class="validate">
+					          <label for="father_name" class="active">Father's name </label>
+					        </div>
+					      </div>
+
+
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l" colspan="3">
+    	
+
+<div class="row">
+					      	<div class="input-field col s10 offset-s1">
+					      	<label>Gender</label>
+					      	</div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s7 offset-s1">
+
+							    <p>
+      								<input name="gender" type="radio" id="test1" />
+      								<label for="test1">Male</label>
+    							</p>
+    							<p>
+      								<input name="gender" type="radio" id="test2" />
+      								<label for="test2">Female</label>
+    							</p>
+							
+							  </div>
+					      </div>
+
+					      <div class="row">      
+					      	<div class="input-field col s10 offset-s1">
+					          <input id="state" type="text">
+					          <label for="aadhar">Aadhar Card Number </label>
+					        </div>
+					       </div>
+
+
+
+					     <div class="row">      
+					      	<div class="input-field col s10 offset-s1">
+					      	<label for="dob">Date Of Birth</label>
+					          <input id="dob" type="date" class="datepicker" align="center" >
+					        </div>
+					       </div>
+<div class="row">
+					       <div class="input-field col s10 offset-s1" id="ex">
+    			<select multiple>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">English</option>
+      <option value="2">Hindi</option>
+      <option value="3">Kannada</option>
+    </select>
+    <label>Languages known</label>
+  </div>
+  </div>
+		
+
+
+
+			  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    			<i class="material-icons right"></i>
+  			</button>
+    </form>
+  </div>
+  <script>
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+</script>
+  <script>
+     $(document).ready(function() {
+        $('.ex').material_select();
+    });
+  </script>
+  <script>
+     $(document).ready(function() {
+        $('select').material_select();
+    });
+  </script>
+
+
+
+
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+						
+					      
+					      
+					      
+</body>
+</html>
