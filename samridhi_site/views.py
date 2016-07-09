@@ -13,7 +13,7 @@ def send_message(sid, token, sms_from, sms_to, sms_body):
         })
 
 def index_page(request):
-    return render(request, 'samridhi_site/index.html', {})
+    return render(request, 'samridhi_site/homepage.html', {})
 
 def notify_person(request):
     sid = 'none585'
