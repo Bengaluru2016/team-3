@@ -28,5 +28,23 @@ class Enrollment(models.Model):
     age = models.IntegerField(default=False)
     date = models.DateTimeField(
                         default=timezone.now)
-
+class Academics(models.Model):
+     id=models.AutoField(primary_key=True)
+     name=models.CharField(max_length=200,default='some string')
+     date=models.DateTimeField(default=timezone.now)
+     maths=models.IntegerField(default=00)
+     science=models.IntegerField(default=00)
+     english=models.IntegerField(default=00)
+     hindi=models.IntegerField(default=00)
+     extracuricular_activities=models.TextField(max_length=800)
+     
+     
+  class Health(models.Model):
+         id=models.AutoField(primary_key=True)
+         name=models.CharField(max_length=200,default='some string')
+         date=models.DateTimeField(default=timezone.now)
+         student_health=models.TextField(max_length=800)
+         fathers_health=models.TextField(max_length=800)
+         mothers_health=models.TextField(max_length=800)
+         siblings_health=models.TextField(max_length=800)
 # Create your models here.
