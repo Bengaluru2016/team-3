@@ -25,4 +25,4 @@ class AcademicsForms(forms.ModelForm):
 class HealthForms(forms.ModelForm):
        class Meta:
            model=Health
-           fields=('id','name','date','student_health','fathers_health','mothers_health','siblings_health')
+           fields=('name','student_health','fathers_health','mothers_health')

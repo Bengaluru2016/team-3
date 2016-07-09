@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import requests
-from .forms import BaselineForm
+from .forms import BaselineForm, HealthForms
 from django.shortcuts import redirect
 
 def send_message(sid, token, sms_from, sms_to, sms_body):
@@ -31,3 +31,14 @@ def base_line(request):
             return render(request, 'samridhi_site/index.html', {})
     return render(request, 'samridhi_site/baseline.html', {'form':form})
 
+def health(request):
+    form = HealthForms()
+    if request.method == 'POST':
+        form = HealthForms(request.POST)
+        print (form.is_valid())
+        print (form.errors)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return render(request, 'samridhi_site/index.html', {})
+    return render(request, 'samridhi_site/health.html', {'form':form})

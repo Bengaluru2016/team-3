@@ -40,6 +40,7 @@ class Academics(models.Model):
 
 class Health(models.Model):
      id=models.AutoField(primary_key=True)
+     student_id = models.IntegerField(default=0)
      name=models.TextField(max_length=200)
      date=models.DateTimeField(default=timezone.now)
      student_health=models.TextField(max_length=800)

@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <script type="text/javascript"  src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
-          
+
 </head>
 <body class="blue-grey lighten-4">
 
@@ -27,11 +27,11 @@
 <div class="container">
 		<div class="row">
 			<div>
-				<form class="col s10 offset-s1 m8 offset-m2 l8 offset-l2" id="login_form" action="#">
+                    <form class="col s10 offset-s1 m8 offset-m2 l8 offset-l2" id="login_form" method="POST">{% csrf_token %}
 			      <div class="card darken-1">
 			        <div class="card-content black-text">
 			          <span class="card-title">Health Details</span>
-			          
+
 						<div class="row">
 					        <div class="input-field col s10 offset-s1">
 					          <input id="id" data-error="Please enter student id" type="text" class="validate">
@@ -40,46 +40,46 @@
 					    </div>
 					    <div class="row">
 					        <div class="input-field col s10 offset-s1">
-					          <input id="name" data-error="Please enter student name" type="text"  required="required">
+					          <input id="name" data-error="Please enter student name" type="text"  name="name" required="required" >
 					          <label for="text" class="active">name</label>
 					     	</div>
 					     </div>
 					     <div class="row">
 					        <div class="input-field col s10 offset-s1">
-					          <input id="date1" class="datepicker" required="required">
+					          <input id="date1" class="datepicker" required="required" >
 					          <label for ="date1" class="active">date</label>
 					     	</div>
 					     </div>
 					     <div class="row">
 					        <div class="input-field col s10 offset-s1">
-					          <input id="student_health" data-error="Pl" type="text"  required="required">
+					          <input id="student_health" data-error="Pl" type="text"  name="student_health" required="required">
 					          <label for="text" class="active">student health report </label>
 					     	</div>
 					     </div>
 					      <div class="row">
 					        <div class="input-field col s10 offset-s1">
-					          <input id="fathers_health" data-error="Pl" type="text"  required="required">
+					          <input id="fathers_health" data-error="Pl" type="text"  name="fathers_health" required="required">
 					          <label for="text" class="active">father health report</label>
 					     	</div>
 					     </div>
 					      <div class="row">
 					        <div class="input-field col s10 offset-s1">
-					          <input id="mothers_health" data-error="Pl" type="text"  required="required">
+					          <input id="mothers_health" data-error="Pl" type="text"  name="mothers_health" required="required">
 					          <label for="text" class="active">mothers health report</label>
 					     	</div>
 					     </div>
 					     <div class="row">
 					        <div class="input-field col s10 offset-s1">
-					          <input id="siblings_health" data-error="Pl" type="text"  required="required">
+					          <input id="siblings_health" data-error="Pl" type="text"  name="sibling_health" required="required">
 					          <label for="text" class="active">siblings health report</label>
 					     	</div>
 					     </div>
 				         <div class="row">
 					       <div class="input-field col s10 offset-s9">
-				        
+
   						<button class="waves-effect waves-gray btn-flat amber-text" type="submit" name="action">submit
   						</button>
-        
+
 				         </div>
 					     </div>
 			      	</div>
