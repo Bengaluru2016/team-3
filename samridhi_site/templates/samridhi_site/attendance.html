@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>Attendance</title>
-
-	<!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-  <script src="all_check.js"></script>
-          
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="../../static/js/materialize.min.js"></script>
+
+	<!-- Compiled and minified CSS -->
   <style type="text/css">
 <!--
 .style2 {color: #3300FF; }
@@ -36,7 +36,7 @@
 <div id="main">
 <div id="first">
 <div class="button">
-<input type="date" class="datepicker">
+DATE:<input type="date" class="datepicker">
   <label class="label1" for="Item 1"></label>
   <table width="560" align="center" cellpadding="2" cellspacing="0">
   <tr>
@@ -81,8 +81,23 @@
 </div>
 <p>&nbsp;</p>
 </div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+</script>
+  <script>
+     $(document).ready(function() {
+        $('.ex').material_select();
+    });
+  </script>
+  <script>
+     $(document).ready(function() {
+        $('select').material_select();
+    });
+  </script>
+
 </body>
 
 
