@@ -18,11 +18,12 @@ def index_page(request):
 def login(request):
     return render(request, 'samridhi_site/index.html', {})
 
-def notify_person(request):
+def sendsms(request):
     sid = 'none585'
     token = '0e7d6190249459c6d9ab400447a03ab4241537a8'
     sms_body= 'These people are not attending classes for more than 3 days'
     send_message(sid, token, '9482582204', '9482582203', sms_body)
+    return render(request, 'samridhi_site/attendance.html')
 
 def survey(request):
     form = BaselineForm()

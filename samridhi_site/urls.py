@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'survey/$', views.survey, name='survey'),
     url(r'attend/$', views.attendance, name='attendance'),
     url(r'login/$', views.login, name='login'),
+    url(r'sendsms/$', views.sendsms, name='sendsms'),
 ]
