@@ -10,6 +10,12 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="../../static/js/materialize.min.js"></script>
 
+  <script>
+  function pickFile(){
+    document.getElementById("filepicker").click();
+  }
+  </script>
+
 </head>
 <body class="blue-grey lighten-4">
 
@@ -52,11 +58,8 @@
 
 
 
-    	 <img src="pic.jpg" alt="Smiley face" width="100" height="100" onclick="ex()"> <br>
-    	 <div><font color="white"><INPUT TYPE="file" NAME="attachedfile"  MAXLENGTH=50 ALLOW="text/*" id="dis" visibility = 'hidden'></INPUT></font></div>
-<script>function ex(){
-	document.getElementById("dis").style.visibility = 'visible';
-	}</script>
+    	 <img src="../../static/img/profile_placeholder.jpg" alt="Profile Picture" width="100" height="100" onclick="pickFile()"> <br>
+    	 <div><font color="white"><input type="file" name="attachedfile"  maxlength="" =50 allow="img/*" id="filepicker" style="display: none;"></input></font></div>
     </th>
   </tr>
   <tr>
@@ -127,7 +130,7 @@
 
 
 
-			  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+			  <button class="btn-flat waves-effect waves-grey amber-text" type="submit" name="action">Submit
     			<i class="material-icons right"></i>
   			</button>
     </form>
