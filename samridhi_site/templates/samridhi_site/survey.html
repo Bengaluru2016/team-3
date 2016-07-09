@@ -36,9 +36,9 @@
 
 <table class="tg">
   <tr>
-    <th class="tg-031e" colspan="2">
+    <th class="tg-031e" colspan="2" width="900">
     	
-<div class="row">
+							<div class="row">
     						<div class="input-field col s7 offset-s1">
           						<input id="first_name" data-error="Please enter a name" type="text" class="validate">
          						<label for="first_name" class="active">Name</label>
@@ -52,7 +52,11 @@
 
 
 
-    	 <img src="pic.jpg" alt="Smiley face" width="100" height="100"> <br>upload photo
+    	 <img src="pic.jpg" alt="Smiley face" width="100" height="100" onclick="ex()"> <br>
+    	 <div><font color="white"><INPUT TYPE="file" NAME="attachedfile"  MAXLENGTH=50 ALLOW="text/*" id="dis" visibility = 'hidden'></INPUT></font></div>
+<script>function ex(){
+	document.getElementById("dis").style.visibility = 'visible';
+	}</script>
     </th>
   </tr>
   <tr>
