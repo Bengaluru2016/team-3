@@ -8,7 +8,7 @@ from .models import Academics
 class BaselineForm(forms.ModelForm):
      class Meta:
          model=Baseline
-         fields=('id','name','fname','native_lang','siblings','photo','age','date')
+         fields=('name','fname','native_lang')
 
 
 class EnrollmentForm(forms.ModelForm):
