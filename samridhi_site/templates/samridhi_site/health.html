@@ -1,0 +1,99 @@
+
+<!DOCTYPE html >
+<head>
+<title>Samridhi Health</title>
+	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script type="text/javascript"  src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+          
+</head>
+<body class="blue-grey lighten-4">
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="nav-wrapper cyan">
+      <a href="#" class="brand-logo center">SAMRIDHI</a>
+    </div>
+  </nav>
+<br>
+<br>
+<br>
+<br>
+<!-- Login Card -->
+<div class="container">
+		<div class="row">
+			<div>
+				<form class="col s10 offset-s1 m8 offset-m2 l8 offset-l2" id="login_form" action="#">
+			      <div class="card darken-1">
+			        <div class="card-content black-text">
+			          <span class="card-title">Health Details</span>
+			          
+						<div class="row">
+					        <div class="input-field col s10 offset-s1">
+					          <input id="id" data-error="Please enter student id" type="text" class="validate">
+					          <label for="text" class="active">Student ID</label>
+					        </div>
+					    </div>
+					    <div class="row">
+					        <div class="input-field col s10 offset-s1">
+					          <input id="name" data-error="Please enter student name" type="text"  required="required">
+					          <label for="text" class="active">name</label>
+					     	</div>
+					     </div>
+					     <div class="row">
+					        <div class="input-field col s10 offset-s1">
+					          <input id="date1" class="datepicker" required="required">
+					          <label for ="date1" class="active">date</label>
+					     	</div>
+					     </div>
+					     <div class="row">
+					        <div class="input-field col s10 offset-s1">
+					          <input id="student_health" data-error="Pl" type="text"  required="required">
+					          <label for="text" class="active">student health report </label>
+					     	</div>
+					     </div>
+					      <div class="row">
+					        <div class="input-field col s10 offset-s1">
+					          <input id="fathers_health" data-error="Pl" type="text"  required="required">
+					          <label for="text" class="active">father health report</label>
+					     	</div>
+					     </div>
+					      <div class="row">
+					        <div class="input-field col s10 offset-s1">
+					          <input id="mothers_health" data-error="Pl" type="text"  required="required">
+					          <label for="text" class="active">mothers health report</label>
+					     	</div>
+					     </div>
+					     <div class="row">
+					        <div class="input-field col s10 offset-s1">
+					          <input id="siblings_health" data-error="Pl" type="text"  required="required">
+					          <label for="text" class="active">siblings health report</label>
+					     	</div>
+					     </div>
+				         <div class="row">
+					       <div class="input-field col s10 offset-s9">
+				        
+  						<button class="waves-effect waves-gray btn-flat amber-text" type="submit" name="action">submit
+  						</button>
+        
+				         </div>
+					     </div>
+			      	</div>
+			      </div>
+		      	</form>
+		    </div>
+		</div>
+</div>
+<script>
+$('.datepicker').pickadate({
+	selectMonths:true,
+	selectYears:15
+});
+</script>
+</body>
+
+</html>
