@@ -21,7 +21,7 @@ def notify_person(request):
     sms_body= 'These people are not attending classes for more than 3 days'
     send_message(sid, token, '9482582204', '9482582203', sms_body)
 
-def base_line(request):
+def survey(request):
     form = BaselineForm()
     if request.method == 'POST':
         form = BaselineForm(request.POST)
@@ -29,7 +29,7 @@ def base_line(request):
             post = form.save(commit=False)
             post.save()
             return render(request, 'samridhi_site/index.html', {})
-    return render(request, 'samridhi_site/baseline.html', {'form':form})
+    return render(request, 'samridhi_site/survey.html', {'form':form})
 
 def health(request):
     form = HealthForms()
@@ -42,3 +42,15 @@ def health(request):
             post.save()
             return render(request, 'samridhi_site/index.html', {})
     return render(request, 'samridhi_site/health.html', {'form':form})
+
+def attendance(request):
+    form = HealthForms()
+    if request.method == 'POST':
+        form = HealthForms(request.POST)
+        print (form.is_valid())
+        print (form.errors)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return render(request, 'samridhi_site/index.html', {})
+    return render(request, 'samridhi_site/attendance.html', {'form':form})

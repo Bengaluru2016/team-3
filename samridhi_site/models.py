@@ -10,7 +10,7 @@ class Baseline(models.Model):
     native_lang = models.TextField(max_length=200)
     siblings = models.IntegerField(default=0)
     photo = models.BooleanField(default=False)
-    age = models.IntegerField(default=False)
+    age = models.IntegerField(default=0)
     date = models.DateTimeField(default=timezone.now)
 
 
