@@ -26,7 +26,6 @@ class Enrollment(models.Model):
     siblings = models.IntegerField(default=0)
     photo = models.BooleanField(default=False)
     age = models.IntegerField(default=False)
-    date = models.DateTimeField(
-                        default=timezone.now)
+    date = models.DateTimeField(default=timezone.now)
 
 # Create your models here.
