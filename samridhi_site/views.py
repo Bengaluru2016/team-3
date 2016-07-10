@@ -21,8 +21,9 @@ def login(request):
 def sendsms(request):
     sid = 'none585'
     token = '0e7d6190249459c6d9ab400447a03ab4241537a8'
+    # Query from the database should be passed
     sms_body= 'These people are not attending classes for more than 3 days'
-    send_message(sid, token, '9482582204', '9482582203', sms_body)
+    send_message(sid, token, '9482582204', '9482582204', sms_body)
     return render(request, 'samridhi_site/attendance.html')
 
 def survey(request):
@@ -32,15 +33,15 @@ def survey(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return render(request, 'samridhi_site/index.html', {})
+            return render(request, 'samridhi_site/homepage.html', {})
     return render(request, 'samridhi_site/survey.html', {'form':form})
 
 def health(request):
     form = HealthForms()
     if request.method == 'POST':
         form = HealthForms(request.POST)
-        print (form.is_valid())
-        print (form.errors)
+
+
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
