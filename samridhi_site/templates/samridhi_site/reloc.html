@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+	<title>Samridhdhi</title>
+
+	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="../../static/js/materialize.min.js"></script>
+
+  <script>
+  function pickFile(){
+    document.getElementById("filepicker").click();
+  }
+  </script>
+
+</head>
+<body class="blue-grey lighten-4">
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="nav-wrapper cyan">
+      <a href="#" class="brand-logo center">SAMRIDHDHI</a>
+    </div>
+  </nav>
+<br>
+<br>
+<!-- Login Card -->
+<div class="container">
+		<div class="row">
+			<div>
+                    <form class="col s10 offset-s1 m8 offset-m2 l8 offset-l2" id="login_form" method="POST">
+			      <div class="card darken-1">
+			        <div class="card-content black-text">
+			          <span class="card-title">Relocation/Migration Form</span>
+
+
+
+						<div class="row">		
+						<div class="input-field col s10 offset-s1">
+          						<input id="name"  type="text" class="validate">
+         						<label for="name" class="active">Name</label>
+       						</div></div>
+
+   
+						 <div class="row">
+					      	<div class="input-field col s10 offset-s1">
+					          <input id="state" type="text">
+					          <label for="aadhar" class="active">Aadhar Card Number </label>
+					        </div>
+					       </div>
+
+
+
+
+					<div class="row">
+					      	<div class="input-field col s10 offset-s1">
+					      	<label>Interested in continuing education?</label>
+					      	</div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s10 offset-s1">
+
+							    <p>
+      								<input name="gen" type="radio" id="test1" />
+      								<label for="test1">No</label>
+    							</p>
+    							<p>
+      								<input name="gen" type="radio" id="test2" />
+      								<label for="test2">Yes</label>
+    							</p>
+
+							  </div>
+					      </div>
+						<div class="row">		
+						<div class="input-field col s10 offset-s1">
+          						<input id="contact"  type="tel" class="validate">
+         						<label for="contact" class="active">contact(Long-term tracking)</label>
+       						</div></div>
+					  
+
+						<div class="row">		
+						<div class="input-field col s10 offset-s1">
+          						<input id="migrated from" data-error="Enter the place you are migrating from" type="text" class="validate">
+         						<label for="percentage" class="active">From(Native)</label>
+       						</div></div>
+
+						<div class="row">		
+						<div class="input-field col s10 offset-s1">
+          						<input id="reason" data-error="Enter the reason for relocation" type="text" class="validate">
+         						<label for="reason" class="active">Reason for relocation</label>
+       						</div></div>
+						<div class="row">
+					      	<div class="input-field col s10 offset-s1">
+					      	<label>Type of the education</label>
+					      	</div>
+					      </div>
+					      <div class="row">
+					        <div class="input-field col s10 offset-s1">
+
+							    <p>
+      								<input name="gen" type="radio" id="test1" />
+      								<label for="test1">Short-term Migration</label>
+    							</p>
+    							<p>
+      								<input name="gen" type="radio" id="test2" />
+      								<label for="test2">Long-term Migration</label>
+    							</p>
+							<p>
+      								<input name="gen" type="radio" id="test3" />
+      								<label for="test3">Mid-term Migration</label>
+    							</p>
+							<p>
+      								<input name="gen" type="radio" id="test4" />
+      								<label for="test4">Cyclic Migration</label>
+    							</p>
+
+							  </div>
+					      </div>
+
+						<div class="row">
+    						<div class="input-field col s10 offset-s1">
+          						<input id="Standard" data-error="enter the place you are migrating to " type="text" class="validate">
+         						<label for="standard" class="active">Migrated To</label>
+       						</div>
+       					</div>
+
+
+
+
+
+
+
+			  <button class="btn-flat waves-effect waves-grey amber-text" type="submit" name="action">Submit
+    			<i class="material-icons right"></i>
+  			</button>
+    </form>
+  </div>
+  <script>
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+</script>
+  <script>
+     $(document).ready(function() {
+        $('.ex').material_select();
+    });
+  </script>
+  <script>
+     $(document).ready(function() {
+        $('select').material_select();
+    });
+  </script>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
