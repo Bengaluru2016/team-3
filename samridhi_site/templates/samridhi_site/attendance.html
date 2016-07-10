@@ -26,7 +26,7 @@
 <nav>
     <div class="nav-wrapper cyan">
       <a href="#" class="brand-logo center">ATTENDANCE</a>
-      <a href="#" class="brand-logo right">SUBMIT</a>
+     
                 </div>
   </nav>
 <br>
@@ -35,12 +35,33 @@
 <br>
 
 
+</script>
+  <script>
+     $(document).ready(function() {
+        $('.ex').material_select();
+    });
+  </script>
+  <script>
+     $(document).ready(function() {
+        $('select').material_select();
+    });
+  </script>
+
+  
+<div class="container">
+    <div class="row">
+      <div>
+        <form class="col s10 offset-s1 m8 offset-m2 l8 offset-l2" id="login_form" action="#">
+            <div class="card darken-1">
+              <div class="card-content black-text">
+
+
 
 
 <div id="main">
 <div id="first">
 <div class="button">
-  <span class="style3">Press Anywhere on the page to get the date</span>
+  <span class="style3"></span>
   <input type="date" class="datepicker">
   <label class="label1" for="Item 1"></label>
   <table width="560" align="center" cellpadding="2" cellspacing="0">
@@ -87,6 +108,8 @@
 
  <a href="/sendsms" class="btn-flat waves-effect waves-light amber-text">Submit
         </button>
+
+ 
 </div>
 
 
@@ -95,17 +118,7 @@
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
   });
-</script>
-  <script>
-     $(document).ready(function() {
-        $('.ex').material_select();
-    });
-  </script>
-  <script>
-     $(document).ready(function() {
-        $('select').material_select();
-    });
-  </script>
+
 
 </body>
 
