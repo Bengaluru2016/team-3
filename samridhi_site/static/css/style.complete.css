@@ -11571,7 +11571,7 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
     }
 
     .wrapper.image .bg2 {
-        background-image: url(../images/picture2.jpg);
+        background-image: url(../../static/img/Picture90.jpg);
         background-repeat: no-repeat;
         background-position: 0% bottom;
         background-size: cover;
